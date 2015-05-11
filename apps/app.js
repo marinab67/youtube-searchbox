@@ -24,7 +24,8 @@ $(function(){
 		$.each(results, function(index, value) { 
 			console.log(value.snippet);
 			console.log(value.id.videoId);
-			$("#search-results").append("<a href=https://www.youtube.com/watch?v=" + value.id.videoId + "><img src=" + value.snippet.thumbnails.default.url + "></a><br>");
+			$("#search-results").append("<a href=https://www.youtube.com/watch?v=" + value.id.videoId + "><img src=" + value.snippet.thumbnails.default.url + "></a>");
+			$("#search-results a").css("padding", "5px");
 		});
 	}
 
